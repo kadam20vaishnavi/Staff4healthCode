@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Staff4health</string>
+    <string name="submit">SUBMIT</string>
+    <string name="verify">Verify</string>
+    <string name="font">playfairdisplay_bold</string>
+    <string name="dialog_message">Welcome to Alert Dialog</string>
+    <string name="dialog_title">Javatpoint Alert Dialog</string>
+    <string-array name="profession">
+        <item>Doctor</item>
+        <item>Nurse</item>
+        <item>Paramedical Staff</item>
+        <item>Other</item>
+    </string-array>
+</resources>

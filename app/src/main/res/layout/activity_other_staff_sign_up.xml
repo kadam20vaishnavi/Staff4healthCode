@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OtherStaffSignUpActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/greenfinchlogo2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up "
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#3B8578"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/playfairdisplay_bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:boxStrokeColor="@color/blue"
+            android:hint="Enter Name *">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/staffname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:boxStrokeColor="@color/blue"
+            android:hint="Enter Email *">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/staffemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:boxStrokeColor="@color/blue"
+            android:hint="Enter Mobile *">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/staffmobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:maxLength="10"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.skydoves.powerspinner.PowerSpinnerView
+            android:id="@+id/spinnerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/borderspinner"
+            android:foreground="?attr/selectableItemBackground"
+            android:hint="Select Profession"
+            android:textColorHint="#4C4C4C"
+            android:textColor="#393838"
+            android:paddingStart ="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingEnd="20dp"
+            android:textSize="16sp"
+            app:spinner_item_array="@array/profession"
+            app:spinner_arrow_gravity="end"
+            app:spinner_arrow_padding="8dp"
+            app:spinner_divider_show="true"
+            app:spinner_divider_size="0.4dp"
+            app:spinner_popup_animation="normal"
+            app:spinner_popup_elevation="14dp" />
+        <TextView
+            android:id="@+id/professionwarning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:visibility="gone"
+            android:textColor="@color/red"
+            android:text="select profession"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/submitstaffbutton"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/playfairdisplay_bold"
+            android:elevation="10dp"
+            app:cornerRadius="30dp"
+            android:text="SUBMIT"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/loginstaffbutton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Already Have Account"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/playfairdisplay_bold"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:clickable="true"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+</LinearLayout>
